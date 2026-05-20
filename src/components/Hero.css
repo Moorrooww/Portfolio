@@ -1,0 +1,157 @@
+.hero {
+    min-height: 100vh;
+    background: #f59cb0;
+    position: relative;
+    overflow: hidden;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    padding: 120px 5% 80px;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 2;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .hero-title {
+    font-family: 'basteleur', bold;
+    font-size: 10rem;
+    color: #4a120c;
+    line-height: 1;
+    margin: 0;
+  }
+
+.hero-title-row {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-badges {
+    position: absolute;
+    left: 80px;
+    bottom: 12vh;
+  
+    display: flex;
+    gap: 24px;
+  }
+  
+  .hero-badges span {
+    background: #4a120c;
+    color: #f59cb0;
+  
+    padding: 14px 28px;
+  
+    border-radius: 999px;
+  
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+  
+.hero-img {
+  width: 390px;
+  margin: 0 -53px;
+  margin-bottom: 6vh;
+  z-index: 3;
+}
+  
+  /* ÉTOILES */
+  
+  .sparkle {
+    position: absolute;
+    width: 70px;
+    height: auto;
+    pointer-events: none;
+    animation: float 4s ease-in-out infinite;
+  }
+  
+  .sparkle-1 {
+    top: 18%;
+    left: 18%;
+  }
+  
+  .sparkle-2 {
+    top: 22%;
+    right: 22%;
+  }
+  
+  .sparkle-3 {
+    bottom: 18%;
+    left: 15%;
+  }
+  
+  /* ANIMATION */
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0px) rotate(0deg);
+    }
+  
+    50% {
+      transform: translateY(-12px) rotate(8deg);
+    }
+  
+    100% {
+      transform: translateY(0px) rotate(0deg);
+    }
+  }
+  
+  /* RESPONSIVE */
+  
+  @media (max-width: 1100px) {
+  
+    .hero-title {
+      font-size: 6rem;
+    }
+  
+    .hero-img {
+      width: 300px;
+    }
+  
+  }
+  
+  @media (max-width: 768px) {
+  
+    .hero {
+      flex-direction: column;
+    }
+  
+    .hero-content {
+      position: relative;
+  
+      left: auto;
+      top: auto;
+  
+      text-align: center;
+    }
+  
+    .hero-title {
+      font-size: 4rem;
+    }
+  
+    .hero-badges {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  
+    .hero-img {
+      position: relative;
+  
+      right: auto;
+      top: auto;
+  
+      width: 260px;
+  
+      margin-top: 40px;
+    }
+  
+  }

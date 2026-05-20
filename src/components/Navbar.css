@@ -1,0 +1,66 @@
+.navbar {
+    position: fixed;
+    top: 16px;
+    left: 16px;
+    z-index: 1000;
+  }
+  
+  .navbar-normal {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+  
+  .logo {
+    font-family: 'basteleur', bold;
+    font-size: 28px;
+    font-weight: bold;
+    color: #4b1208;
+    font-family: 'basteleur', bold;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 20px;
+    font-family: 'Fraunces 72pt SuperSoft', bold;
+  }
+  
+  .nav-links a {
+    color: #4b1208;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .navbar-pill {
+    width: 190px;
+    height: 55px;
+    background: #8b451c;
+    border-radius: 999px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+  }
+  
+  .eye {
+    width: 52px;
+    height: 34px;
+    background: white;
+    border-radius: 50% 50% 45% 45%;
+  
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .pupil {
+    width: 13px;
+    height: 28px;
+    background: #8b2f00;
+    border-radius: 50%;
+  
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }

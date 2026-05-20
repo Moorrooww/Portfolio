@@ -1,0 +1,52 @@
+.available-section {
+    background: #f59cb0;
+    padding: 30px 0;
+  }
+  
+  .available-line {
+    width: 92%;
+    height: 3px;
+    background: #4a120c;
+    margin: 0 auto;
+    border-radius: 999px;
+  }
+  
+  .available-bar {
+    overflow: hidden;
+    width: 100%;
+    padding: 10px 0;
+  }
+  
+  .available-track {
+    display: flex;
+    width: max-content;
+    animation: marquee 12s linear infinite;
+  }
+  
+  .available-item {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    padding-right: 60px;
+    white-space: nowrap;
+  }
+  
+  .available-item span {
+    color: #4a120c;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .available-item img {
+    width: 34px;
+  }
+  
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+  
+    to {
+      transform: translateX(-50%);
+    }
+  }
