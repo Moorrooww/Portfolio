@@ -1,8 +1,12 @@
 import { useEffect, useState } from "react"
 import "./Navbar.css"
+import { useLocation } from "react-router-dom"
 
 function Navbar() {
   const [scrolled, setScrolled] = useState(false)
+
+  const location = useLocation()
+  const isAboutPage = location.pathname === "/about"
 
   useEffect(() => {
     function handleScroll() {
@@ -17,7 +21,7 @@ function Navbar() {
   }, [])
 
   return (
-    <nav className="navbar">
+    <nav className={`navbar ${isAboutPage ? "navbar-about" : ""}`}>
       {!scrolled ? (
         <div className="navbar-normal">
           <div className="logo">M✦WWW</div>

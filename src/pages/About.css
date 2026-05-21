@@ -1,0 +1,23 @@
+.about-page {
+    background: #5B21B6;
+    min-height: 200vh;
+  }
+  
+  .about-hero {
+    min-height: 100vh;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    padding: 100px 6%;
+    text-align: center;
+  }
+  
+  .about-hero h1 {
+    color: #FFFFFF;
+    font-size: clamp(3rem, 8vw, 8rem);
+    line-height: 1.1;
+    margin: 0;
+    font-family: 'basteleur', bold;
+  }

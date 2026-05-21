@@ -30,6 +30,29 @@
     font-weight: bold;
     text-decoration: none;
   }
+
+  /*////ABOUT/////*/
+
+  .navbar-about .logo {
+    color: #FFFFFF;
+  }
+  
+  .navbar-about .nav-links a {
+    color: #FFFFFF;
+  }
+  
+
+
+  .navbar-about .logo {
+    color: #FFFFFF;
+  }
+  
+  .navbar-about .nav-links a {
+    color: #FFFFFF;
+  }
+  
+
+  /*//////EYE BAR/////*/
   
   .navbar-pill {
     width: 190px;
